@@ -1,0 +1,24 @@
+#OSPosts created by pickman murimi
+#The app is not complete though allows the user to do the basics, i.e login,post articles, read articles and rate then
+#I am using this project to try out concepts that are new to me, that is
+                                   *mvc
+                                   *pdo-for the database
+                                   *jquery and bootstrap libraries for the front end
+#my way of dealing with mvc *may* not be correct but it does work and as much as possible tries to apply DRY
+           #there are parts that have forced me to ignore dry e.g the inclusion if header and footer files in each view file.
+#basically this is how my mvc structure is set up.
+           VIEW ---------> CONTROLLER ----------->MODEL----------->CONTROLLER---------->VIEW
+           * the view talks to the controller, controller to the model , model responds to the controller , controller updates the view
+           *in some cases the model is not "talked" to especially when we do not need any data from the database.eg during validation.
+
+###################################
+    some security measures taken:
+            1.prevention of sql injection - use of pdo prepare statements
+            2.prevention of html and javascript injection - use of htmlspecialchars() php function
+            3.hashing of passwords - php hash()
+            4.destroying of sessions on logout
+            5.text validation is done server side
+
+        If theres a security issue not addressed or if there is a better way of dealing with the problems please point it out.
+
+

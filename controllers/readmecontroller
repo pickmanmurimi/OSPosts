@@ -1,0 +1,4 @@
+#the controllers decide which page/view to serve.
+#some methods do not serve a page but a specific value/or return a json object to the page that called the method.
+#the controller will connect to the model which connects to the database.
+#basically in my implementation this controllers will link the model and the view.

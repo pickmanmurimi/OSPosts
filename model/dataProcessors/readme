@@ -1,0 +1,4 @@
+#most logic lives here and rules that affect data passed to the database
+#data passes through this classes(dataProccessors) to be verified then is passed to the dataMappers
+#does not communicate with the database
+#validation files are here
