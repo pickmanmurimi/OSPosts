@@ -20,8 +20,8 @@ class database
              */
             $database = 'OSposts.com';
             $host = 'localhost';
-            $user = 'pick';
-            $password = 'mysqld7';
+            $user = 'osposts';
+            $password = 'root';
             $options = [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
                 PDO::ATTR_EMULATE_PREPARES => false,];
             self::$db = new PDO("mysql:host=$host;dbname=$database;charset=utf8mb4", $user, $password, $options);
